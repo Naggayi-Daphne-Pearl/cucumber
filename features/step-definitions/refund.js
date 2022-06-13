@@ -1,8 +1,20 @@
-const { Given, When, Then } = require('@cucumber/cucumber');
-const {expect} = require('chai')
+const { Given, When, Then, After, Before} = require('@cucumber/cucumber');
+const {expect} = require('chai');
+
 let price  = 10; 
 let stock = 5; 
-let receipt;  
+let receipt; 
+
+//Hooks are used for setup and teardown the environment before and after each scenario.
+Before(function () {
+    console.log('Inside before the scenario');
+  });
+
+After(function () {
+    console.log('Inside After');
+    });
+
+
 
 function processRefunds (){
     return true; 
