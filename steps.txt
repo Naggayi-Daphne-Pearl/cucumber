@@ -2,4 +2,11 @@ STEPS TO FOLLOW
      -install dependencies
         -@cucumber/cucumber
         - chai 
-        - 
+    - install dev dependencies 
+        - @cucumber/pretty-formatter 
+
+    -Create directory 
+         - mkdir features
+         -create a folder in the features directory called steps-definitions
+         - create a file and name it test.feature
+    - Write a scenario in the 'Given-When-Then' steps in test.feature
